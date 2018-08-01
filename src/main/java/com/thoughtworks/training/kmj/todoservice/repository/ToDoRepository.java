@@ -15,7 +15,7 @@ import java.util.List;
 @Repository
 public class ToDoRepository {
 
-    @Value(value="classpath:data.json")
+    @Value(value= "classpath:static/data.json")
     private Resource data;
 
 

@@ -12,9 +12,23 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ToDo {
 
+
     private int id;
 
     private String content;
+
+
+
+
+    @JsonProperty("completed")
+    public boolean completed(){
+        return false;
+    }
+
+    @JsonProperty("readOnly")
+    public boolean readOnly(){
+        return true;
+    }
 
 
     @JsonIgnore
